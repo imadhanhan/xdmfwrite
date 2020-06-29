@@ -6,7 +6,7 @@ The inputs are as follows:
 **XDMFWRITE(FILENAME,SIZE,DATATYPE)** creates an XDMF file with 3D extents given by **SIZE** and with an attribute dataset given by the h5 **FILENAME** with the datatype specified by **DATATYPE**. If DATATYPE is not specified, the default is double.
 
 *Example:*  create an XDMF file for 'myfile.h5' that contains a fixed-size 100x200x300 dataset.
-> - xdmfwrite('myfile.h5',[100 200 300],'double');
+> - xdmfwrite('myfile.h5', [100 200 300], 'double');
 
 *Example:*  create an XDMF file for a 3D matrix of ones in single single precision with a fized-size of 100x200x300.
 > - mydata=single(ones(100,200,300));
