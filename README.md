@@ -1,6 +1,6 @@
 # xdmfwrite
 
-XDMFWRITE is a Matlab function that can be used to create an XDMF text file for an associated 3D H5 file. This is useful when attempting to visualize a 3D matrix in ParaView. As of January 2020, this only works for an h5 file with only one dataset.
+XDMFWRITE is a Matlab function that can be used to create an XDMF text file for an associated 3D H5 file. This is useful when attempting to visualize a 3D matrix in ParaView. As of January 2020, this function accepts an h5 file with multiple datasets (scalars only, no vector capability yet).
 
 The inputs are as follows:
 XDMFWRITE(FILENAME,SIZE,DATATYPE) creates an XDMF file with 3D extents given by SIZE and with an attribute dataset given by the h5 FILENAME with the datatype specified by DATATYPE. If DATATYPE is not specified, the default is double.
